@@ -1,2 +1,6 @@
 
 /praticaltest.client/.vscode
+PraticalTest.Server/obj
+.vs
+PraticalTest.Server/bin
+PraticalTest.Server/obj/

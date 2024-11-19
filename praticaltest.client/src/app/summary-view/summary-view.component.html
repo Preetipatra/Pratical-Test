@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h2>Summary View</h2>
+  <!-- Button to navigate to Detailed View -->
+  <div class="text-end mb-2">
+    <button class="btn btn-primary" routerLink="/detail-view">Go to Detailed View</button>
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sampling Time</th>
+        <th>Project Name</th>
+        <th>Construction Count</th>
+        <th>Is Construction Completed</th>
+        <th>Length of the road</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data?.datas">
+        <td>{{ item.samplingTime | date: 'dd-MM-yyyy hh:mm:ss a' }}</td>
+        <td>{{ getPropertyValue(item.properties, 'Project Name') }}</td>
+        <td>{{ getPropertyValue(item.properties, 'Construction Count') }}</td>
+        <td>{{ getPropertyValue(item.properties, 'Is Construction Completed') }}</td>
+        <td>{{ getPropertyValue(item.properties, 'Length of the road') }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

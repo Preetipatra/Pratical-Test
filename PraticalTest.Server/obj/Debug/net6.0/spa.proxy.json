@@ -1,8 +1,0 @@
-{
-"SpaProxyServer": {
-"ServerUrl": "https://localhost:4200",
-"LaunchCommand": "npm start",
-"WorkingDirectory": "D:\\Pratical-Test\\PraticalTest.Server\\..\\praticaltest.client",
-"MaxTimeoutInSeconds": "120"
-}
-}
